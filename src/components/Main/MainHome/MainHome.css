@@ -1,0 +1,42 @@
+.event-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Tamaño fijo para todas las tarjetas */
+    overflow: hidden;
+    border-radius: 0px;
+    background-color: #f0f0f0; /* Color de fondo para las tarjetas sin imagen */
+}
+
+.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
+
+.event-info-overlay {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
